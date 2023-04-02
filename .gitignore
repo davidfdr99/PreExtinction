@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+model.ipynb
+test_pytorch.ipynb 
+winequality-red.csv
+data/all/
+data/PreExt/

@@ -1,0 +1,5 @@
+https://doi.org/10.15468/dl.8axap7
+Sampled material, Material citation, Conserved specimen
+No Data Deficient nor Non Evaluated
+
+cat Mollusca_GBIF.csv | cut -d  -f10,22,23,26,28,33,6,7,8,9,34 > Subset_Columns_Mollusca.tsv
