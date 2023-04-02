@@ -16,24 +16,27 @@ During the Hackathon, we focused on producing a proof of concept for the Mollusc
 
 ### Objective
 
-The objective of the project was to create a database with multile APIs to predict the endangerment of species. Our MVP predicts in two classes 'least concerned' and 'endangered' unlabelled species of the Mollusca phylum.
+The objective of the project was to create a database and a Machine Learning model with multile APIs to predict the endangerment of species. Our Minimum Viable Product predicts in two classes 'least concern' and 'endangered' unlabelled species of the Mollusca phylum.
+The 'endangered' category merges all non 'least concern' labels.
 
 
 
 ### Processing
 
+We merged the GBIF and IUCN data based on species name. Only species with at least one conservation status were kept. This resulted in the number of species going from 8760 to 4133.
 
+For each timepoint with available year and location (longitude and latitude), we queried the Open Meteo API to retrieve meteorological data and sum it up in a yearly fashion. These yearly statistics avoid having seasonality-based bias.
 
 ### Model
 
-
+The used data are the median of all timepoints for continuous data and the last timepoint for categorical data.
+After necessary filters and normalization methods, we used XGBoost, a gradient boosting model based on decision trees.
 
 ### Results 
 
+We obtained satisfactory results with accuracy and recall metrics approaching 80%.
 
-
-### Équipe
-
+### Team
 
 Our fabulous team wad led by Nicolas Godron along with Hugues Escoffier, David Fandrei and Mélanie Brégou.
 
