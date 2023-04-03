@@ -1,8 +1,9 @@
----
-title: "PreExtinction"
-description: "D4GEN Hackathon project"
+![alt text](https://github.com/davidfdr99/PreExtinction/blob/main/PreExtinction_Logo.png)
+<p align="center"> 
+D4GEN Hackathon 2023 Project 
+<p>
 
---- 
+--------------
 
 ### Introduction
 
@@ -41,7 +42,7 @@ We obtained satisfactory results with accuracy and recall metrics approaching 80
 Our fabulous team wad led by Nicolas Godron along with Hugues Escoffier, David Fandrei and Mélanie Brégou.
 
 # Principal contributions 
-Nicolas Godron : Project lead and GBIF database
-Hugues Escoffier : IUCN database and presentation material 
-David Fandrei : Model
-Mélanie Brégou : Open meteo databse and Graphical interface
+* Nicolas Godron : Project lead and GBIF database
+* Hugues Escoffier : IUCN database and presentation material 
+* David Fandrei : Model
+* Mélanie Brégou : Open meteo databse and Graphical interface
