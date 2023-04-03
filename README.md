@@ -1,4 +1,4 @@
-![alt text](https://github.com/davidfdr99/PreExtinction/blob/main/PreExtinction_Logo.png)
+![alt text](https://github.com/davidfdr99/PreExtinction/blob/main/web_interface/Logo.png)
 <p align="center"> 
 D4GEN Hackathon 2023 Project 
 <p>
