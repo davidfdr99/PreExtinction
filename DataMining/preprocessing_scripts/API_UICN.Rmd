@@ -1,0 +1,53 @@
+---
+title: "R_PreExtinction"
+author: "Hugues Escoffier"
+date: "2023-03-31"
+output: html_document
+---
+
+## Librairy
+
+```{r}
+library("rredlist")
+library("taxize")
+library("jsonlite")
+library("tidyverse")
+library("readxl")
+```
+
+## API 
+
+```{r}
+API = "" # Input your KEY 
+```
+
+```{r}
+all_species <- read.csv("Mollusca_Species_Names.tsv")
+
+for (i in 1:nrow(all_species)) {
+  
+  scientific_name_1 <- all_species[i,]
+  IUCN.all <- iucn_summary(scientific_name_1, distr_detail = T, key = API)
+
+  if (length(IUCN.all[[1]]$history) > 1) {
+  nb_native_1 <- length(IUCN.all[[1]]$distr$Native$code)
+  nb_present_1 <- length(IUCN.all[[1]]$distr$`Present - Origin Uncertain`$code)
+  nb_vagrant_1 <- length(IUCN.all[[1]]$distr$Vagrant$code)
+
+  years <- IUCN.all[[1]]$history$year
+  status <- IUCN.all[[1]]$history$code
+
+  nb_rows <- length(status)
+  scientific_name <- rep(scientific_name_1, times = nb_rows)
+  nb_native <- rep(nb_native_1, times = nb_rows)
+  nb_present <- rep(nb_present_1, times = nb_rows)
+  nb_vagrant <- rep(nb_vagrant_1, times = nb_rows)
+
+  species <- data.frame(scientific_name, years, status, nb_native, nb_present, nb_vagrant)
+
+  name <- paste0("all/", scientific_name_1)
+  write_tsv(species, name)
+  }
+}
+```
+
