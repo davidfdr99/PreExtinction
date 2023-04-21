@@ -634,12 +634,7 @@ copy of the Program in return for a fee.
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-Also add information on how to contact you by electronic and paper mail.
-
-  If the program does terminal interaction, make it output a short
-notice like this when it starts in an interactive mode:
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
 
     PreExtinction  Copyright (C) 2023 Nicolas Godron, Hugues Escoffier, Melanie Brégou, David Fandrei
     This program comes with ABSOLUTELY NO WARRANTY.
