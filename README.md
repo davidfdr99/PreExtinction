@@ -45,4 +45,4 @@ Our fabulous team wad led by Nicolas Godron along with Hugues Escoffier, David F
 * Nicolas Godron : Project lead and GBIF database
 * Hugues Escoffier : IUCN database and presentation material 
 * David Fandrei : Model
-* Mélanie Brégou : Open meteo databse and Graphical interface
+* Mélanie Brégou : Open meteo database and Graphical interface
